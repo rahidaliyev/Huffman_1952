@@ -4,11 +4,11 @@ def InputArray(arr,num,sum):
             n = input("num: ")
             n = float(n)
 
-            if sum + n > 1:
+            if round(sum + n,2) > 1:
                 print("Array sum cannot be more than 1. Please enter a smaller number.")
             else:
                 arr.append(n)
-                sum += n
+                sum = round(sum + n,2) 
                 break
 
     return(arr)
